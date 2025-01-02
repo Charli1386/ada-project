@@ -35,21 +35,27 @@ body
     gap: 25px;
 }
 
-.text-script, .section-title > h1 {
+.text-script, .section-title > h1, .text-highlight, .text-fancy, .card-title{
     font-family: "Delius Swash Caps", serif;
     font-weight: 800;
     font-style: normal;
 }
 
+.text-highlight
+{
+    color: var(--secondary);
+}
+
 .header
 {
     color: var(--secondary-text);
-    position: absolute;
-    background-color: none;
+    position: fixed;
+    background-color: #1a1a1a;
     top: 0;
     width: 100%;
     z-index: 100;
 }
+
 
 .nav-link, .nav-link:visited
 {
@@ -75,7 +81,7 @@ body
     background-color: var(--secondary-hover);
 }
 
-.section:not(:first-child)
+.section:not(:nth-child(2))
 {
     padding: 5em;
 }
@@ -83,4 +89,72 @@ body
 .section-title
 {
     margin-bottom: 2em;
+}
+
+.featured-recipe-container
+{
+    gap: 10px;
+}
+
+#featured-tab
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 30%;
+    height: 300px;
+    padding-right: 20px;
+    border-right: 1px solid #1a1a1a;
+}
+
+#featured-tab .active
+{
+    background-color: var(--secondary);
+    color: var(--secondary-text);
+}
+
+button.nav-link
+{
+    text-align: left;
+    color: black;
+}
+
+.tab-content
+{
+    width: 100%;
+    padding-left: 1em;
+}
+
+.featured-text
+{
+    padding-right: 10px;
+}
+
+#section-browse
+{
+    position: relative;
+}
+
+#section-browse .section-title > h1, .section-body > h5{
+    color: var(--secondary-text);
+}
+
+#section-browse .section-browse-backdrop
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/browse-bg.jpeg");
+    left: 0;
+    top: 50px;
+    z-index: -100;
+    filter: brightness(60%);
+    background-attachment: fixed;
+}
+
+.recipe-card
+{
+    background-color: var(--bg-primary);
+    height: 300px;
 }

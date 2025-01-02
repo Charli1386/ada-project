@@ -2,107 +2,447 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goodeats</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="assets/extern/includes.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Goodeats</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/extern/includes.css">
+	<link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
 <body>
-    <section id="section-header" class="section">
-        <header id="header">
-            <div class="header container-fluid d-flex flex-row align-items-center justify-content-between">
-                <div class="navbar-brand p-2">
-                    <a class="navbar-brand" href="#"><h1 class="text-script">Goodeats</h1></a>
-                </div>
-                <ul class="nav">
-                    <li class="nav-item">
-                      <a class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link">Featured</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link">Browse Recipes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Contact</a>
-                      </li>
-                  </ul>
-                  <div class="submit-recipe">
-                    <button type="button" class="btn btn-colored">Submit a Recipe</button>
-                  </div>
-            </div>
-        </header>
-        <div id="home-carousel" class="carousel slide carousel-fade">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/images/featured-1.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="text-script">Chicken and Pork Adobo</h1>
-                        <p>A classic Filipino dish featuring tender chicken and pork simmered in a tangy, savory sauce
-                            of soy sauce, vinegar, garlic, and spices. Its rich flavors and comforting aroma make it
-                            perfect for any meal, whether it’s a hearty lunch or a cozy dinner. Best enjoyed with
-                            steamed rice, it's a satisfying dish for any occasion.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/images/featured-2.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="text-script">Pork Sinigang</h1>
-                        <p>A beloved sour soup made with tender pork, fresh vegetables, and a tangy tamarind-based
-                            broth. Its comforting, zesty flavor is perfect for chilly days or when you're craving a
-                            hearty, home-cooked meal. Best served piping hot with steamed rice, it’s a dish that warms
-                            both the heart and the stomach.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/images/featured-3.jpeg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="text-script">Leche Flan</h1>
-                        <p>A rich and creamy Filipino dessert made with a smooth custard base topped with a golden
-                            caramel glaze. Its velvety texture and sweet, indulgent flavor make it a perfect treat for
-                            celebrations or as a sweet ending to any meal. Served chilled, it’s a classic favorite that
-                            never fails to delight./p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-    <section id="section-featured" class="section">
-        <div class="section-title">
-            <h1>Featured recipes</h1>
-        </div>
-        <div class="section-body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla sit eaque ab ratione, provident pariatur repellendus ex harum placeat itaque hic minima aut! Aliquam quis magnam rem officiis cum laborum similique voluptate, sed commodi eligendi pariatur at dolorum voluptas explicabo perspiciatis modi quia. Illo at eum dolorem reiciendis, dignissimos unde expedita impedit earum quisquam cum corrupti vero? Obcaecati accusantium neque est animi quia doloribus. Est aperiam doloremque quos reiciendis iure beatae eum nisi id tenetur? Incidunt cum similique accusamus! Reiciendis repellendus officiis, dignissimos odio cum, molestias magni corrupti magnam, nostrum deserunt voluptatibus neque delectus nihil dolorem illo dolore ratione quaerat ex maiores consectetur soluta! Quae explicabo, doloremque natus, vel earum accusantium a sit odio doloribus neque architecto illo ducimus exercitationem ipsam ad! Dolores, numquam at maxime, ipsa ad natus id voluptatem nam ut labore voluptas dolorem, odit fugit aliquid placeat sed temporibus eum unde esse hic ab atque amet incidunt! Dolorum voluptas tempore molestias quam consectetur ipsa aperiam dolore maiores earum excepturi rerum sunt repellendus temporibus dolores ab at, corrupti quasi ea magnam harum voluptatibus expedita et aut. Nostrum ea obcaecati tempora, quod nisi modi corporis excepturi odit, dolores beatae harum magnam natus explicabo! Quis nihil, nisi magni unde quia aliquam. Necessitatibus, ipsum iusto. Labore similique rerum in sunt et doloribus animi nulla blanditiis quae voluptatum optio tempora ex illum voluptate alias quam harum ipsam, quos sed odit error repellendus. Eius ipsa est, quaerat distinctio voluptas asperiores, neque veniam ad minima ipsam perferendis consequuntur sunt assumenda at quae praesentium tempora. Eligendi temporibus voluptates quae sint. Fugiat fuga quos deserunt possimus repudiandae dolores nisi voluptas libero, dolore repellendus maxime atque perspiciatis pariatur fugit, magni odit saepe inventore eum at eos earum, debitis vitae! Numquam amet doloribus deleniti? Facere, sed ipsa consequatur quam modi maxime sit alias ut? Totam illo libero nihil.</p>
-        </div>
-    </section>
+	<div class="header">
+		<div class="sticky-header container-fluid d-flex flex-row align-items-center justify-content-between">
+			<div class="navbar-brand p-2">
+				<a class="navbar-brand" href="#">
+					<h1 class="text-script">Goodeats</h1>
+				</a>
+			</div>
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#section-home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#section-featured">Featured</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#section-browse">Browse Recipes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">Contact</a>
+				</li>
+			</ul>
+			<div class="submit-recipe">
+				<button type="button" class="btn btn-colored">Submit a Recipe</button>
+			</div>
+		</div>
+	</div>
+	<section id="section-home" class="section">
+		<div id="home-carousel" class="carousel slide carousel-fade">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="assets/images/featured-1.jpeg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+						<h1 class="text-script">Chicken and Pork Adobo</h1>
+						<p>A classic Filipino dish featuring tender chicken and pork simmered in a tangy, savory sauce
+							of soy sauce, vinegar, garlic, and spices. Its rich flavors and comforting aroma make it
+							perfect for any meal, whether it’s a hearty lunch or a cozy dinner. Best enjoyed with
+							steamed rice, it's a satisfying dish for any occasion.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="assets/images/featured-2.jpeg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+						<h1 class="text-script">Pork Sinigang</h1>
+						<p>A beloved sour soup made with tender pork, fresh vegetables, and a tangy tamarind-based
+							broth. Its comforting, zesty flavor is perfect for chilly days or when you're craving a
+							hearty, home-cooked meal. Best served piping hot with steamed rice, it’s a dish that warms
+							both the heart and the stomach.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="assets/images/featured-3.jpeg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+						<h1 class="text-script">Leche Flan</h1>
+						<p>A rich and creamy Filipino dessert made with a smooth custard base topped with a golden
+							caramel glaze. Its velvety texture and sweet, indulgent flavor make it a perfect treat for
+							celebrations or as a sweet ending to any meal. Served chilled, it’s a classic favorite that
+							never fails to delight./p></p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section>
+	<section id="section-featured" class="section">
+		<div class="section-title">
+			<h1>
+				<span class="text-highlight">Featured</span>
+				recipes
+			</h1>
+		</div>
+		<div class="section-body">
+			<h5>Browse our featured recipes that will surely make your day!</h5>
+			<div class="card">
+				<div class="card-body">
+					<div class="d-flex align-items-start">
+						<div id="featured-tab" class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+							aria-orientation="vertical">
+							<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+								data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+								aria-selected="true">Chicken Pork Adobo</button>
+							<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+								data-bs-target="#v-pills-profile" type="button" role="tab"
+								aria-controls="v-pills-profile" aria-selected="false">Pork Sinigang</button>
+							<button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
+								data-bs-target="#v-pills-disabled" type="button" role="tab"
+								aria-controls="v-pills-disabled" aria-selected="false">Leche Flan</button>
+							<button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+								data-bs-target="#v-pills-messages" type="button" role="tab"
+								aria-controls="v-pills-messages" aria-selected="false">Bistek Tagalog</button>
+							<button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+								data-bs-target="#v-pills-settings" type="button" role="tab"
+								aria-controls="v-pills-settings" aria-selected="false">Filipino Fried Chicken</button>
+						</div>
+						<div class="tab-content" id="v-pills-tabContent">
+							<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+								aria-labelledby="v-pills-home-tab" tabindex="0">
+								<div class="container-fluid d-flex flex-row align-items-center justify-content-between">
+									<div class="featured-text">
+										<h1 class="text-fancy">Chicken Pork Adobo</h1>
+										<h6 class="text-muted">"Two meats, one legendary flavor—Chicken Pork Adobo, the
+											ultimate comfort food! 🍗🐖✨"</h6>
+										<br>
+										<p>
+											Chicken Pork Adobo is made by simmering chicken and pork in a flavorful
+											blend of soy sauce, vinegar, garlic, and spices until tender and infused
+											with rich, savory goodness. A touch of bay leaves and peppercorns adds
+											depth, while the slow cooking creates a luscious, tangy sauce. Serve it with
+											steamed rice for the perfect Filipino classic!
+										</p>
+									</div>
+									<div class="featured-image">
+										<img src="assets/images/featured-1.jpeg" height="300" width="300">
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+								aria-labelledby="v-pills-profile-tab" tabindex="0">
+								<div class="container-fluid d-flex flex-row align-items-center justify-content-between">
+									<div class="featured-text">
+										<h1 class="text-fancy">Pork Sinigang</h1>
+										<h6 class="text-muted">"Tangy, hearty, and oh-so-comforting—Pork Sinigang hits
+											the sour spot! 🍲💚"</h6>
+										<br>
+										<p>
+											Pork Sinigang is made by simmering tender pork cuts with fresh vegetables
+											like radish, eggplant, and okra in a tamarind-infused broth. The tangy
+											flavor comes alive as the ingredients meld together, creating a hearty and
+											satisfying sour soup that's best enjoyed with steamed rice.
+										</p>
+									</div>
+									<div class="featured-image">
+										<img src="assets/images/featured-2.jpeg" height="300" width="300">
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
+								aria-labelledby="v-pills-disabled-tab" tabindex="0">
+								<div class="container-fluid d-flex flex-row align-items-center justify-content-between">
+									<div class="featured-text">
+										<h1 class="text-fancy">Leche Flan</h1>
+										<h6 class="text-muted">"Indulge in the creamy sweetness of Leche Flan—dessert
+											perfection in every bite! 🍮✨"</h6>
+										<br>
+										<p>
+											Leche Flan is made by blending eggs, condensed milk, and sugar, then gently
+											steaming the mixture to create a rich, velvety custard. The golden caramel
+											on top adds the perfect sweet finishing touch to this classic Filipino
+											dessert.
+										</p>
+									</div>
+									<div class="featured-image">
+										<img src="assets/images/featured-3.jpeg" height="300" width="300">
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+								aria-labelledby="v-pills-messages-tab" tabindex="0">
+								<div class="container-fluid d-flex flex-row align-items-center justify-content-between">
+									<div class="featured-text">
+										<h1 class="text-fancy">Bistek Tagalog</h1>
+										<h6 class="text-muted">"Savory, tender, and packed with flavor—Bistek Tagalog,
+											your ultimate beef craving satisfied! 🥩🍋"</h6>
+										<br>
+										<p>
+											Bistek Tagalog is made by marinating thinly sliced beef in soy sauce,
+											calamansi (or lemon), and garlic, then pan-frying it until tender and
+											infused with bold flavors. It’s typically served with onions, creating a
+											deliciously savory dish perfect with steamed rice.
+										</p>
+									</div>
+									<div class="featured-image">
+										<img src="assets/images/featured-4.jpeg" height="300" width="300">
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+								aria-labelledby="v-pills-settings-tab" tabindex="0">
+								<div class="container-fluid d-flex flex-row align-items-center justify-content-between">
+									<div class="featured-text">
+										<h1 class="text-fancy">Filipino Fried Chicken</h1>
+										<h6 class="text-muted">"Crispy, golden, and packed with flavor—Filipino-style
+											fried chicken, a crispy delight in every bite! 🍗✨"</h6>
+										<br>
+										<p>
+											Filipino-style fried chicken is marinated in a blend of soy sauce, garlic,
+											and spices before being coated in a crispy batter and fried to golden
+											perfection. The result is a juicy, flavorful chicken with a satisfying
+											crunch, often served with a side of gravy or dipping sauce for extra
+											indulgence.
+										</p>
+									</div>
+									<div class="featured-image">
+										<img src="assets/images/featured-5.jpeg" height="300" width="300">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="section-browse" class="section">
+		<div class="section-browse-backdrop"></div>
+		<div class="section-title">
+			<h1>
+				<span class="text-highlight">Browse</span>
+				recipes
+			</h1>
+		</div>
+		<div class="section-body">
+			<h5>Browse from our list of recipes</h5>
+			<div class="card">
+				<div class="card-body">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+								data-bs-target="#breakfast" type="button" role="tab" aria-controls="home"
+								aria-selected="true">Breakfast</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#lunch"
+								type="button" role="tab" aria-controls="profile" aria-selected="false">Lunch</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#dinner"
+								type="button" role="tab" aria-controls="contact" aria-selected="false">Dinner</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#dessert"
+								type="button" role="tab" aria-controls="contact" aria-selected="false">Dessert</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="breakfast" role="tabpanel"
+							aria-labelledby="home-tab">
+							<div class="container-fluid p-4">
+								<div class="container text-center">
+									<div class="row">
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Beef Tapa</h5>
+												<img src="assets/images/bf-1.jpeg" alt="" height="100%" width="70%">
+												<button class="btn btn-colored" data-bs-toggle="modal"
+													data-bs-target="#bf-1-recipe">View Recipe</button>
+											</div>
+
+											<!-- Recipe Modal -->
+											<div class="modal fade" id="bf-1-recipe" tabindex="-1"
+												aria-labelledby="bf-1-recipe" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLabel">Beef Tapa
+															</h5>
+															<button type="button" class="btn-close"
+																data-bs-dismiss="modal" aria-label="Close"></button>
+														</div>
+														<div class="modal-body">
+															<h5>View recipe source here: <a href="https://www.foxyfolksy.com/beef-tapa-recipe/">Beef Tapa</a></h5>
+															<img src="assets/images/bf-1.jpeg" height="50%" width="50%">
+															<h5 class="mt-2">Ingredients</h5>
+															<ul class="list-group" style="text-align: left;">
+																<li class="list-group-item">300 grams beef sirloin - cut into thin slices</li>
+																<li class="list-group-item">3 tablespoons soy sauce</li>
+																<li class="list-group-item">3 tablespoons lemon juice or calamansi juice</li>
+																<li class="list-group-item">1 tablespoon garlic - finely minced</li>
+																<li class="list-group-item">1/8 teaspoon ground pepper</li>
+																<li class="list-group-item">1/2 teaspoon sugar</li>
+																<li class="list-group-item">1/4 teaspoon baking soda (optional)</li>
+																<li class="list-group-item">oil - for frying</li>
+															</ul>
+															<h5 class="mt-4">Instructions</h5>
+															<ol class="list-group list-group-numbered" style="text-align: left;">
+																<li class="list-group-item">Using a mallet or any blunt object, pound each cut of meat until meat is flattened to about a quarter inch thick.</li>
+																<li class="list-group-item">Place the beef into a bowl and sprinkle with the baking soda. Mix until well blended.</li>
+																<li class="list-group-item">Add lemon juice and mix again several times. Then add the rest of the ingredients.</li>
+																<li class="list-group-item">Cover the bowl with plastic wrap and marinate beef in the fridge overnight.</li>
+																<li class="list-group-item">Heat a tablespoon of oil in a large pan or skillet. Fry each side of the meat for 3-5 minutes or until browned and the liquids are absorbed. Add more oil as needed.</li>
+																<li class="list-group-item">Serve with sunny-side-up egg and garlic fried rice while still hot.</li>
+															</ol>
+															<br>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- End Modal -->
+
+										</div>
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Champorado</h5>
+												<img src="assets/images/bf-2.jpeg" alt="" height="100%" width="70%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Longanissang Lucban</h5>
+												<img src="assets/images/bf-3.jpeg" alt="" height="100%" width="70%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="container-fluid p-4">
+								<div class="container text-center">
+									<div class="row">
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Chicken Adobo</h5>
+												<img src="assets/images/featured-1.jpeg" alt="" height="100%"
+													width="70%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Bistek Tagalog</h5>
+												<img src="assets/images/featured-4.jpeg" alt="" height="100%"
+													width="70%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Ginisang Monggo</h5>
+												<img src="assets/images/ln-1.jpeg" alt="" height="100%" width="70%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="contact-tab">
+							<div class="container-fluid p-4">
+								<div class="container text-center">
+									<div class="row">
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Pork Sinigang</h5>
+												<img src="assets/images/featured-2.jpeg" alt="" height="100%"
+													width="70%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Filipino Fried Chicken</h5>
+												<img src="assets/images/featured-5.jpeg" alt="" height="100%"
+													width="70%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Bulalo</h5>
+												<img src="assets/images/dn-1.jpeg" alt="" height="100%" width="70%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="dessert" role="tabpanel" aria-labelledby="contact-tab">
+							<div class="container-fluid p-4">
+								<div class="container text-center">
+									<div class="row">
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Leche Flan</h5>
+												<img src="assets/images/featured-3.jpeg" alt="" height="100%"
+													width="50%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+										<div class="col">
+											<div class="recipe-card card p-2 d-flex align-items-center justify-content-center"
+												style="gap: 20px;">
+												<h5 class="card-title">Halo-Halo</h5>
+												<img src="assets/images/ds-1.jpeg" alt="" height="100%" width="50%">
+												<button class="btn btn-colored">View Recipe</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 
 </html>
