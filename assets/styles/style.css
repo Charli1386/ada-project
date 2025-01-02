@@ -1,0 +1,86 @@
+:root
+{
+    --bg-primary: #e1dad5;
+
+    --secondary: #f08a36;
+    --secondary-hover: #e37318;
+    --secondary-text: #ffffff;
+
+    --button-oval: 20px 20px 20px 20px;
+}
+
+
+* {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body
+{
+    background-color: var(--bg-primary);
+}
+
+.carousel-item>img {
+    height: 100vh;
+    width: 100%;
+    filter: brightness(40%);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 25px;
+}
+
+.text-script, .section-title > h1 {
+    font-family: "Delius Swash Caps", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.header
+{
+    color: var(--secondary-text);
+    position: absolute;
+    background-color: none;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-link, .nav-link:visited
+{
+    color: var(--secondary-text);
+    cursor: default;
+}
+
+.nav-link:hover
+{
+    color: var(--secondary);
+    transition: 200ms ease-in-out;
+}
+
+.btn-colored
+{
+    background-color: var(--secondary);
+    color: var(--secondary-text);
+    border-radius: var(--button-oval)
+}
+
+.btn-colored:hover
+{
+    background-color: var(--secondary-hover);
+}
+
+.section:not(:first-child)
+{
+    padding: 5em;
+}
+
+.section-title
+{
+    margin-bottom: 2em;
+}
