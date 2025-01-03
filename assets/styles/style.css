@@ -1,6 +1,6 @@
 :root
 {
-    --bg-primary: #e1dad5;
+    --bg-primary: #efefef;
 
     --secondary: #f08a36;
     --secondary-hover: #e37318;
@@ -89,6 +89,7 @@ body
 .section-title
 {
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .featured-recipe-container
@@ -136,7 +137,7 @@ button.nav-link
     position: relative;
 }
 
-#section-browse .section-title > h1, .section-body > h5{
+#section-browse .section-title > h1{
     color: var(--secondary-text);
 }
 
@@ -157,4 +158,49 @@ button.nav-link
 {
     background-color: var(--bg-primary);
     height: 300px;
+}
+
+#section-about
+{
+    margin-top: 50px;
+    background-color: #ffe8d6;
+}
+
+.about
+{
+    height: 500px;
+}
+
+.section-about-img, .section-about-text
+{
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.section-about-img > img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.section-about-text
+{
+    gap: 20px;
+}
+
+.bi-check2-all
+{
+    padding-right: 20px;
+    text-wrap: nowrap;
+}
+
+.about-list > li
+{
+    margin-bottom: 10px;
+}
+
+.modal:not(#recipe-submit-modal)
+{
+    text-align: center;
 }
